@@ -47,3 +47,12 @@
   display: inline-block;
   text-align: center;
 }
+
+.pink-button {
+  background-color: #940051;
+  color: white;
+  padding: 1rem 4rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
