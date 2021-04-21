@@ -1,0 +1,60 @@
+
+header .topbar {
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: white;
+  padding-left: 0.5rem;
+}
+
+header .topbar a {
+  text-decoration: none;
+  color: white;
+}
+
+header .topbar .support {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .topbar .support * {
+  padding: 0.5rem;
+}
+
+
+header .main-header .logo {
+  width: 4rem;
+}
+
+header .main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+header .main-header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .main-header nav a {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
+header .main-header nav .yellow-button {
+  color: white;
+}
