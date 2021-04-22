@@ -123,3 +123,22 @@ h3 {
   background-color: #5B471D;
   margin-right: 0.5rem;
 }
+
+/*humberger*/
+
+.humberger {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 100px;
+  border: 2px solid #CBC600;
+  color: #CBC600;
+  display: none;
+}
+
+.humberger i {
+  font-size: 24px;
+}
+

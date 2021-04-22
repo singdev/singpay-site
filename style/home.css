@@ -50,3 +50,9 @@
   font-weight: bold;
   color: #CBC600;
 }
+
+@media (max-width: 700px) {
+  .home .illustration {
+    display: none;
+  }
+}

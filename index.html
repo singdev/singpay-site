@@ -25,7 +25,7 @@
   
   <header>
     <aside class="topbar">
-      <a href="mailto:contact@singpay.ga">contact@singpay.ga</a>
+      <a href="mailto:contact@singpay.ga" class="email">contact@singpay.ga</a>
       <div class="support">
         <a href="#">Creer un compte</a>
         
@@ -50,12 +50,15 @@
     
     <aside class="main-header">
         <img src="./images/icon.png" alt="Logo" class="logo">
-        <nav>
+
+        <nav id="mainNav">
+          <span class="humberger" onclick="toogleMenu('mainNav')">
+            <i class="fas fa-bars"></i>
+          </span>
           <a href="#">A propos</a>
           <a href="#">Fonctionnalite</a>
           <a href="#">Tarif</a>
           <a href="#">Contact</a>
-          
           <a href="#"class="yellow-button">Se connecter</a>
         </nav>
     </aside>
@@ -303,5 +306,6 @@
     </section>
   </footer>
   
+  <script src="./script.js"></script>
 </body>
 </html>

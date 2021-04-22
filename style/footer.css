@@ -12,6 +12,7 @@ footer .message {
   justify-content: center;
   width: 100%;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 footer .message .gray-logo {
@@ -32,6 +33,7 @@ footer .link {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 footer .link a {
