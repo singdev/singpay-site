@@ -1,0 +1,50 @@
+
+.about article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.about article aside {
+  width: 350px;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.about article aside h2 {
+  color: #CBC600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.about article aside p {
+  text-align: justify;
+  font-size: 13px;
+}
+
+.about h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.about .partners {
+  display: flex;
+  border: 2px solid #ccc;
+  padding: 0.5rem;
+}
+
+.about .partner {
+  width: 100px;
+  margin-right: 4rem;
+}
+
+.about .action {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}

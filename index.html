@@ -8,9 +8,15 @@
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Asap&family=Asap+Condensed&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link rel="stylesheet" href="./style/feature.css">
+  <link rel="stylesheet" href="./style/pricing.css">
+  <link rel="stylesheet" href="./style/contact.css">
+  
 </head>
 <body>
   
@@ -52,40 +58,189 @@
     </aside>
   </header>
 
+  <section class="home">
+    <aside class="content">
+      <span class="text-head">SingPay</span>
+      <span class="text-title">Meilleur solution de paiement Mobile au Gabon</span>
+      <p>Accelérer votre croissance en intégrant un moyen de paiement libre, simple d’utilisation, sécurisé et adapté au contexte africain.</p>
+      
+      <a href="#" class="pink-button">Commencer maintenant</a>
+    </aside>
+    
+    <aside class="illustration">
+      <img src="./images/icon.png" alt="Logo" class="logo">
+      <p class="singpay">
+        <span class="blue">SING</span>
+        <span class="yellow">PAY</span>
+      </p>
+    </aside>
+  </section>
+
+  
   <main>
     <div class="main-wrapper">
-      <section class="home">
-          <aside class="content">
-            <span class="text-head">SingPay</span>
-            <span class="text-title">Meilleur solution de paiement Mobile au Gabon</span>
-            <p>Accelérer votre croissance en intégrant un moyen de paiement libre, simple d’utilisation, sécurisé et adapté au contexte africain.</p>
-            
-            <a href="#" class="pink-button">Commencer maintenant</a>
-          </aside>
-          
-          <aside class="illustration">
-            <img src="./images/icon.png" alt="Logo" class="logo">
-            <p class="singpay">
-              <span class="blue">SING</span>
-              <span class="yellow">PAY</span>
-            </p>
-          </aside>
-      </section>
-      
       <section class="about">
-        
+          <div class="section-wrapper">
+            <div class="section-title">
+              <h1 id="about">A Propos</h1>
+              <div class="squares">
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <div class="square3"></div>
+              </div>
+            </div>
+            
+            <article>
+              <aside>
+                <h2>Integrateur</h2>
+                <p>SingPay est un portail de paiement électronique via mobile Money:  Les services cloud de SingPay comminiquent avec les systeme d’informations des moyens de paiement electronique fournis par les partenaires de SingPay.</p>
+              </aside>
+              
+              <aside>
+                <h2>Passerelle</h2>
+                <p>SingPay fourni une API RESTful vous permettant d’effectuer les requêtes de mobile money qui s’effectue nativement dans le contexte GSM depuis une solution fonctionnant dans le contexte du web. SingPay assure la fiabilité, la securité et la régulation de ces translation de domaine.</p>
+              </aside>
+              
+              <aside>
+                <h2>Tableau de bord</h2>
+                <p>SingPay vous offre la possibilité de créer plusieurs portefeuille pour gérer vos comptes et suivre les opérations.</p>
+              </aside>
+              
+            </article>
+            
+            <h3>Nos Partenaires</h3>
+            
+            <div class="partners">
+              <img src="./images/icon.png" alt="Airtel Money" class="partner">
+              <img src="./images/icon.png" alt="Moov Money" class="partner">
+            </div>
+            
+            <div class="action">
+              <a href="#" class="pink-button">Creer un compte maintenant, c'est gratuit</a>
+            </div>
+          </div>
+          
       </section>
       
       <section class="feature">
-        
+        <div class="section-wrapper">
+          <div class="section-title">
+            <h1 id="feature">Fonctionnalites</h1>
+            <div class="squares">
+              <div class="square1"></div>
+              <div class="square2"></div>
+              <div class="square3"></div>
+            </div>
+          </div>
+          
+          <article>
+            <h3>API</h3>
+            
+            <p>L’API SingPay offre la possibilité de réaliser les paiements de vos clients sur votre compte marchant, d’effectuer des transferts d’un compte mobile money à un autre, de vérifier le solde d’un compte et vérifier l’historique des opérations effectué sur un compte.</p>
+         
+            <div class="features">
+              <aside>
+                <h4>Paiement</h4>
+                <p>Permettez à vos clients d’effectuer des paiements mobile money depuis votre plateforme de paiement en ligne.</p>
+                <a href="#">Voir la documentation</a>
+              </aside>
+              
+              <aside>
+                <h4>Wordpress</h4>
+                <p>Vous avez realiser votre site sur wordpress? Integrer facilement le plugin wordpress de singpay</p>
+                <a href="#">Voir la documentation</a>
+              </aside>
+              
+              <aside>
+                <h4>Prestashop</h4>
+                <p>Vous avez realiser votre site sur prestashop? Integrer facilement le plugin wordpress de singpay.</p>
+                <a href="#">Voir la documentation</a>
+              </aside>
+              
+              <aside>
+                <h4>Externalisation</h4>
+                <p>Vous ne voulez pas realiser de developpement en ce qui concerne le paiement, vous pouvez externaliser votre processus de paiement en vous synchronisant avec notre plateforme de paiment en ligne securise sans avoir besoin de coder quoi que ce soit.</p>
+                <a href="#">Voir la documentation</a>
+              </aside>
+            </div>
+            
+          </article>
+          
+          <article>
+            <h3>Tableau de bord</h3>
+            
+            <div class="features large" >
+              <aside>
+                <h4>Portefeuille</h4>
+                <p>Dès la signature du contrat de paiement en ligne avec une des maison de téléphonie partenaire de SingPay, utilisez les informations du compte marchand reçu pour créer un nouveau portefeuille sur le tableau de bord de SingPay. Vous pourrez ainsi l’utiliser comme récepteur compte créditeur.</p>
+                <a href="#">Voir le didactitiel</a>
+              </aside>
+              
+              <aside>
+                <h4>Journal</h4>
+                <p>Consulter l’historique des opérations réalisé sur vos différents portefeuile SingPay: La date, le statut, le montant, etc, de chaque requête effectué sur le portefeuille.</p>
+                <a href="#">Voir le didactitiel</a>
+              </aside>
+            </div>
+            
+          </article>
+        </div>
       </section>
       
       <section class="pricing">
-        
+        <div class="section-wrapper">
+          <div class="section-wrapper">
+            <div class="section-title">
+              <h1 id="feature">Tarif</h1>
+              <div class="squares">
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <div class="square3"></div>
+              </div>
+            </div>
+            
+            <div class="offres">
+              
+              <div class="offre">
+                <h4 class="title">Startup</h4>
+                <p class="detail">En dessous de 25 Million de transactions enregistre sur SingPay, au beneficier de 0% de frais.</p>
+                <p class="taux">Gratuit</p>
+              </div>
+              
+              <div class="offre">
+                <h4 class="title">Entreprise</h4>
+                <p class="detail">Entreprise ayant réalisé un chiffre d’affaire supérieur à 25 Million de Francs CFA.</p>
+                <p class="taux">2,5 % par transaction</p>
+              </div>
+              
+              <div class="offre">
+                <h4 class="title">Administration</h4>
+                <p class="detail">Les solutions numérique commandés par l’administration public</p>
+                <p class="taux">1,5 % par transaction</p>
+              </div>
+              
+            </div>
+            
+            <p>*Votre statut sera déterminé en fonction des informations qui seront fournis à l’inscription. Le statut est ré-évalué chaque année</p>
+        </div>
       </section>
       
       <section class="contact">
-        
+        <div class="section-wrapper">
+          <div class="section-wrapper">
+            <div class="section-title">
+              <h1 id="contact">Nous contacter</h1>
+              <div class="squares">
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <div class="square3"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contacts">
+            
+          </div>
       </section>
     </div>
   </main>

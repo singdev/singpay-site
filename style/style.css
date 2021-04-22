@@ -5,6 +5,37 @@
   font-family: 'Asap', sans-serif;;
 }
 
+/*Main*/
+
+.home {
+  margin-top: 6rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section .section-wrapper {
+  width: 1124px;
+  max-width: 95%;
+  padding: 1rem;
+}
+
+main .main-wrapper section {
+  margin-top: 4rem;
+}
+
+h3 {
+  color: #940051;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* dropdown*/
+
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -40,6 +71,9 @@
   background-color: #ccc;
 }
 
+
+/*Button*/
+
 .yellow-button {
   background-color: #CBC600;
   color: white;
@@ -55,4 +89,33 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
+}
+
+/* Section title */
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.section-title h1 {
+  text-transform: uppercase;
+  color: #032E3C;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.section-title .squares {
+  display: flex;
+}
+
+.section-title .squares > div {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #5B471D;
+  margin-right: 0.5rem;
 }
