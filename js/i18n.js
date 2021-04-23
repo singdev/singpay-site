@@ -8,10 +8,11 @@ function localization() {
   if (lang != "en" && lang != "fr") {
     lang = "en";
   }
-  translate(lang);
+  translateUI(lang);
 }
 
-function translate(lang) {
+function translateUI(lang) {
+  document.getElementById("langId").innerHTML = lang.toUpperCase();
   console.log(lang);
   readJsonFile(`/js/i18n/${lang}.json`, (json) => {
     const data = JSON.parse(json);

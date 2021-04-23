@@ -36,10 +36,10 @@
         </div>
         
         <div class="dropdown">
-          <span class="dropdown-title">Francais</span>
+          <span class="dropdown-title" id="langId">Francais</span>
           <div class="dropdown-content">
-            <a href="#" class="dropdown-item French">Français</a>
-            <a href="#" class="dropdown-item English">English</a>
+            <a href="#" class="dropdown-item French" onclick="translateUI('fr')">Français</a>
+            <a href="#" class="dropdown-item English" onclick="translateUI('en')">English</a>
           </div>
         </div>
         
@@ -59,7 +59,7 @@
           <a href="#feature" onclick="hideMenu('mainNav')" class="Feature">Fonctionnalités</a>
           <a href="#pricing" onclick="hideMenu('mainNav')" class="Pricing">Tarifs</a>
           <a href="#contact" onclick="hideMenu('mainNav')" class="Contact">Contacts</a>
-          <a href="#" class="yellow-button" onclick="hideMenu('mainNav')" class="Connect">Se connecter</a>
+          <a href="#" class="yellow-button Connect" onclick="hideMenu('mainNav')">Se connecter</a>
         </nav>
     </aside>
   </header>
