@@ -62,6 +62,11 @@ header .main-header nav a {
   font-weight: bold;
   text-transform: uppercase;
   color: black;
+  transition: 0.4s;
+}
+
+header .main-header nav a:hover {
+  color: #CBC600;
 }
 
 header .main-header nav .yellow-button {
@@ -73,27 +78,32 @@ header .main-header nav .yellow-button {
     display: flex;
   }
   
-  header .main-header nav a {
-    display: none;
-  }
-  
-  header .main-header .show-nav {
-    width: 100vw;
-    height: 100vh;
+  header .main-header nav {
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 99999;
+    width: 100vw;
+    background: linear-gradient(#ffffff9c, #ffffff9c),
+     url(https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  }
+  
+  header .main-header .show-nav {
+    height: 100vh;
   }
   
   header .main-header .show-nav a {
     display: inline-block;
     margin-bottom: 2rem;
+    transition: 0.4s;
   }
   
   header .main-header .show-nav .humberger {

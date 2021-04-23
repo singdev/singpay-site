@@ -7,10 +7,8 @@
   <title>SingPay - Accelérer votre croissance en intégrant un moyen de paiement libre, simple d’utilisation, sécurisé et adapté au contexte africain.</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Asap&family=Asap+Condensed&family=Roboto&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/home.css">
@@ -49,17 +47,19 @@
     </aside>
     
     <aside class="main-header">
-        <img src="./images/icon.png" alt="Logo" class="logo">
-
+        <a href="/"><img src="./images/icon.png" alt="Logo" class="logo"></a>
+        <span class="humberger" onclick="toogleMenu('mainNav')">
+          <i class="fas fa-bars"></i>
+        </span>
         <nav id="mainNav">
           <span class="humberger" onclick="toogleMenu('mainNav')">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
           </span>
-          <a href="#">A propos</a>
-          <a href="#">Fonctionnalite</a>
-          <a href="#">Tarif</a>
-          <a href="#">Contact</a>
-          <a href="#"class="yellow-button">Se connecter</a>
+          <a href="#about" onclick="hideMenu('mainNav')">A propos</a>
+          <a href="#feature" onclick="hideMenu('mainNav')">Fonctionnalités</a>
+          <a href="#pricing" onclick="hideMenu('mainNav')">Tarifs</a>
+          <a href="#contact" onclick="hideMenu('mainNav')">Contacts</a>
+          <a href="#" class="yellow-button" onclick="hideMenu('mainNav')">Se connecter</a>
         </nav>
     </aside>
   </header>
@@ -67,8 +67,8 @@
   <section class="home">
     <aside class="content">
       <span class="text-head">SingPay</span>
-      <span class="text-title">Meilleur solution de paiement Mobile au Gabon</span>
-      <p>Accelérer votre croissance en intégrant un moyen de paiement libre, simple d’utilisation, sécurisé et adapté au contexte africain.</p>
+      <span class="text-title">Meilleur solution API de paiement Mobile au Gabon</span>
+      <p>Accelérez votre croissance en intégrant un moyen de paiement libre, simple d’utilisation, sécurisé et adapté au contexte africain.</p>
       
       <a href="#" class="pink-button">Commencer maintenant</a>
     </aside>
@@ -85,10 +85,10 @@
   
   <main>
     <div class="main-wrapper">
-      <section class="about">
+      <section id="about" class="about">
           <div class="section-wrapper">
             <div class="section-title">
-              <h1 id="about">A Propos</h1>
+              <h1 >à Propos</h1>
               <div class="squares">
                 <div class="square1"></div>
                 <div class="square2"></div>
@@ -99,12 +99,12 @@
             <article>
               <aside>
                 <h2>Integrateur</h2>
-                <p>SingPay est un portail de paiement électronique via mobile Money:  Les services cloud de SingPay comminiquent avec les systeme d’informations des moyens de paiement electronique fournis par les partenaires de SingPay.</p>
+                <p>SingPay est un portail de paiement électronique via mobile money:  Les services cloud de SingPay communiquent avec les systèmes d’informations des moyens de paiement électronique fournis par les partenaires de SingPay.</p>
               </aside>
               
               <aside>
                 <h2>Passerelle</h2>
-                <p>SingPay fourni une API RESTful vous permettant d’effectuer les requêtes de mobile money qui s’effectue nativement dans le contexte GSM depuis une solution fonctionnant dans le contexte du web. SingPay assure la fiabilité, la securité et la régulation de ces translation de domaine.</p>
+                <p>SingPay fourni une API RESTfull vous permettant d’effectuer les requêtes de mobile money qui s’effectues nativement dans le contexte GSM depuis une solution fonctionnant dans le contexte du web. SingPay assure la fiabilité, la securité et la régulation de ces translations de domaine.</p>
               </aside>
               
               <aside>
@@ -121,16 +121,16 @@
             </div>
             
             <div class="action">
-              <a href="#" class="pink-button">Creer un compte maintenant, c'est gratuit</a>
+              <a href="#" class="pink-button">Créer un compte maintenant, c'est gratuit</a>
             </div>
           </div>
           
       </section>
       
-      <section class="feature">
+      <section id="feature" class="feature">
         <div class="section-wrapper">
           <div class="section-title">
-            <h1 id="feature">Fonctionnalites</h1>
+            <h1 >Fonctionnalités</h1>
             <div class="squares">
               <div class="square1"></div>
               <div class="square2"></div>
@@ -140,8 +140,6 @@
           
           <article>
             <h3>API</h3>
-            
-            <p>L’API SingPay offre la possibilité de réaliser les paiements de vos clients sur votre compte marchant, d’effectuer des transferts d’un compte mobile money à un autre, de vérifier le solde d’un compte et vérifier l’historique des opérations effectué sur un compte.</p>
          
             <div class="features">
               <aside>
@@ -152,19 +150,19 @@
               
               <aside>
                 <h4>Wordpress</h4>
-                <p>Vous avez realiser votre site sur wordpress? Integrer facilement le plugin wordpress de singpay</p>
+                <p>Vous avez réalisé votre site sur wordpress? Intégrez facilement le plugin wordpress de singpay</p>
                 <a href="#">Voir la documentation</a>
               </aside>
               
               <aside>
                 <h4>Prestashop</h4>
-                <p>Vous avez realiser votre site sur prestashop? Integrer facilement le plugin wordpress de singpay.</p>
+                <p>Vous avez realisé votre site sur prestashop? Intégrez facilement le plugin prestashop de singpay.</p>
                 <a href="#">Voir la documentation</a>
               </aside>
               
               <aside>
                 <h4>Externalisation</h4>
-                <p>Vous ne voulez pas realiser de developpement en ce qui concerne le paiement, vous pouvez externaliser votre processus de paiement en vous synchronisant avec notre plateforme de paiment en ligne securise sans avoir besoin de coder quoi que ce soit.</p>
+                <p>Vous ne voulez pas réaliser de développement en ce qui concerne le paiement, vous pouvez externaliser votre processus de paiement en vous synchronisant avec notre plateforme de paiment en ligne sécurisée sans avoir besoin de coder quoi que ce soit.</p>
                 <a href="#">Voir la documentation</a>
               </aside>
             </div>
@@ -177,13 +175,13 @@
             <div class="features large" >
               <aside>
                 <h4>Portefeuille</h4>
-                <p>Dès la signature du contrat de paiement en ligne avec une des maison de téléphonie partenaire de SingPay, utilisez les informations du compte marchand reçu pour créer un nouveau portefeuille sur le tableau de bord de SingPay. Vous pourrez ainsi l’utiliser comme récepteur compte créditeur.</p>
+                <p>Dès la signature du contrat de paiement en ligne avec une des maisons de téléphonie partenaire de SingPay, utilisez les informations du compte marchand reçu pour créer un nouveau portefeuille sur le tableau de bord de SingPay. Vous pourrez ainsi l’utiliser comme récepteur compte créditeur.</p>
                 <a href="#">Voir le didactitiel</a>
               </aside>
               
               <aside>
                 <h4>Journal</h4>
-                <p>Consulter l’historique des opérations réalisé sur vos différents portefeuile SingPay: La date, le statut, le montant, etc, de chaque requête effectué sur le portefeuille.</p>
+                <p>Consulter l’historique des opérations réalisées sur vos différents portefeuile SingPay: La date, le statut, le montant, ..., de chaque requête effectué sur le portefeuille.</p>
                 <a href="#">Voir le didactitiel</a>
               </aside>
             </div>
@@ -192,11 +190,11 @@
         </div>
       </section>
       
-      <section class="pricing">
+      <section id="pricing" class="pricing">
         <div class="section-wrapper">
           <div class="section-wrapper">
             <div class="section-title">
-              <h1 id="feature">Tarif</h1>
+              <h1 >Tarifs</h1>
               <div class="squares">
                 <div class="square1"></div>
                 <div class="square2"></div>
@@ -208,7 +206,7 @@
               
               <div class="offre">
                 <h4 class="title">Startup</h4>
-                <p class="detail">En dessous de 25 Million de transactions enregistre sur SingPay, au beneficier de 0% de frais.</p>
+                <p class="detail">En dessous de 25 Million de transactions enregistré sur SingPay, vous bénéficiez de 0% de frais.</p>
                 <p class="taux">Gratuit</p>
               </div>
               
@@ -220,7 +218,7 @@
               
               <div class="offre">
                 <h4 class="title">Administration</h4>
-                <p class="detail">Les solutions numérique commandés par l’administration public</p>
+                <p class="detail">Les solutions numériques commandés par l’administration public</p>
                 <p class="taux">1,5 % par transaction</p>
               </div>
               
@@ -230,11 +228,11 @@
         </div>
       </section>
       
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="section-wrapper">
           <div class="section-wrapper">
             <div class="section-title">
-              <h1 id="contact">Nous contacter</h1>
+              <h1>Nous contacter</h1>
               <div class="squares">
                 <div class="square1"></div>
                 <div class="square2"></div>
@@ -249,7 +247,7 @@
               <h3>Laissez nous un message</h3>
               
               <div class="form-group">
-                <label for="nom">Nom et prenom</label>
+                <label for="nom">Nom et prénom</label>
                 <input type="text">
               </div>
               
@@ -259,7 +257,7 @@
               </div>
               
               <div class="form-group">
-                <label for="telephone">Telephone</label>
+                <label for="telephone">Téléphone</label>
                 <input type="tel" id="telephone">
               </div>
               
@@ -273,7 +271,7 @@
             </div>
             
             <div class="other-contact">
-              <h3>Suivez nous sur les reseaux sociaux</h3>
+              <h3>Suivez nous sur les réseaux sociaux</h3>
               <div class="socials">
                 <a href="#" style="color: #4267B2;"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" style="color: #C4302B;"><i class="fab fa-youtube"></i></a>
@@ -295,12 +293,11 @@
   <footer>
     <section class="message">
       <img src="./images/icon.png" alt="LOGO" class="gray-logo">
-      <p>SingPay est un intégrateur d’API de paiement mobile développé par la Société d’Incubation Numérique du Gabon pour aider les startups à se lancer plus rapidement en baissant la barrière du partage de revenu avec les autres acteurs imposé par les intégrateurs traditionnel.</p>
+      <p>SingPay est un intégrateur d’API de paiement mobile développé par la Société d’Incubation Numérique du Gabon pour aider les startups à se lancer plus rapidement en baissant la barrière du partage de revenu avec les autres acteurs imposé par les intégrateurs traditionnels.</p>
     </section>
     
     <section class="link">
-      <a href="#">Qui sommes nous?</a>
-      <a href="#">Gérer par SING SA</a>
+      <a href="www.sing.ga">Géré par SING SA</a>
       <a href="#">Condition d’utilisation</a>
       <a href="#">Politique de confidentialité</a>
     </section>
