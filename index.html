@@ -248,7 +248,7 @@
               
               <div class="form-group">
                 <label for="nom">Nom et prénom</label>
-                <input type="text">
+                <input id="nom" type="text">
               </div>
               
               <div class="form-group">
@@ -266,7 +266,7 @@
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
               </div>
               
-              <a href="#" class="pink-button">Envoyer</a>
+              <a href="#contact" class="pink-button" onclick="sendMessage()">Envoyer</a>
               
             </div>
             
@@ -303,6 +303,7 @@
     </section>
   </footer>
   
+  <script src="./contact.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
