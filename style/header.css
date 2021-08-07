@@ -67,6 +67,8 @@ header .main-header nav a {
 
 header .main-header nav a:hover {
   color: #CBC600;
+  border: 1px solid #CBC600;
+  background-color: white;
 }
 
 header .main-header nav .yellow-button {
