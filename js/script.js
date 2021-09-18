@@ -29,7 +29,7 @@ async function sendMessage(){
         "Content-Type":"application/json"
       },
       body: JSON.stringify({
-        htmlContent, dest, subject, labelName
+        nom, email, telephone, message, dest, subject, labelName
       })
     });
     
