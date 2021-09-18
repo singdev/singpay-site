@@ -15,7 +15,6 @@ async function sendMessage(){
   const telephone = document.getElementById("telephone").value;
   const message = document.getElementById("message").value;
   
-  const htmlContent = getMessage(nom, email, telephone, message);
   const dest = `orphee.nve@sing.ga`;
   const subject = "Nouveau message";
   const labelName = 'SingPay';
