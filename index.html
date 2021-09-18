@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SingPay - Accelérer votre croissance en intégrant un moyen de paiement libre, simple d’utilisation, sécurisé et adapté au contexte africain.</title>
   
+  <link rel="stylesheet" href="./lib/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Asap&family=Asap+Condensed&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/home.css">
@@ -96,20 +99,39 @@
               </div>
             </div>
             
+            <p class="about-main-p">SingPay est un agrégateur de moyens de paiements simple d'utilisation, accessible aux startups et aux grandes entreprises avec un support pour les projets de l'administration publique.</p>
+            
+            <h3 class="Partner">Raison d'être de SingPay ?</h3>
+            
+            <div class="raison">
+              <div class="img-container">
+                <img src="./images/raison.jpg" alt="Raison d'etre">
+              </div>
+              
+              <div class="raison-text">
+                <i class="fas fa-quote-left"></i>
+                <p>L’objectif de SingPay est de faciliter l’intégration des moyens de paiement dans les différentes solutions d’un écosystème digital en croissance, en baissant un certain nombre barrière à l’entrée notamment pour les projets en démarrage et les projets de l’administration publique.</p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+
             <article>
               <aside>
-                <h2 class="Integrateur">Integrateur</h2>
-                <p class="WhyAPI">SingPay est un portail de paiement électronique via mobile money:  Les services cloud de SingPay communiquent avec les systèmes d’informations des moyens de paiement électronique fournis par les partenaires de SingPay.</p>
+                <span class="icon-weakness"></span>
+                <h2 class="Integrateur">Sans frais</h2>
+                <p class="WhyAPI">SingPay ne reçoit aucun frais pour les projets qui n’ont pas encore atteint un certain niveau de transaction.</p>
               </aside>
               
               <aside>
-                <h2 class="Gateway">Passerelle</h2>
-                <p class="WhyGateway">SingPay fourni une API RESTfull vous permettant d’effectuer les requêtes de mobile money qui s’effectues nativement dans le contexte GSM depuis une solution fonctionnant dans le contexte du web. SingPay assure la fiabilité, la securité et la régulation de ces translations de domaine.</p>
+                <span class="icon-secure"></span>
+                <h2 class="Gateway">Tiers de confiance</h2>
+                <p class="WhyGateway">SingPay réponds aux exigeances des différentes solutions de paiement et mets à la disposition de ces utilisateurs des API permettant d'utiliser ces solutions sans configuration supplémentaires.</p>
               </aside>
               
               <aside>
-                <h2 class="Dashboard">Tableau de bord</h2>
-                <p class="WhyDashboard">SingPay vous offre la possibilité de créer plusieurs portefeuille pour gérer vos comptes et suivre les opérations.</p>
+                <span class="icon-click" style="font-weight: 500; transform: scale(1.4);"></span>
+                <h2 class="Dashboard">Facile d’acces</h2>
+                <p class="WhyDashboard">La création d'un compte sur SingPay est gratuit et ce dernier vous donne directement accès aux fonctionnalité offerte dans un environnement test similaire à celui de prodcution.</p>
               </aside>
               
             </article>
@@ -118,6 +140,7 @@
             
             <div class="partners">
               <img src="./images/airtel_money.png" alt="Airtel Money" class="partner">
+              <img src="./images/ecobankpay.jpg" alt="Airtel Money" class="partner">
             </div>
             
             <div class="action">
@@ -139,53 +162,79 @@
           </div>
           
           <article>
-            <h3>API</h3>
+            <h3>Core</h3>
          
             <div class="features">
               <aside>
                 <h4 class="Paiement">Paiement</h4>
                 <p class="PaimentExplain">Permettez à vos clients d’effectuer des paiements mobile money depuis votre plateforme de paiement en ligne.</p>
-                <a href="#" class="ShowDoc">Voir la documentation</a>
               </aside>
               
               <aside>
-                <h4>Wordpress</h4>
-                <p class="WordPressExplain">Vous avez réalisé votre site sur wordpress? Intégrez facilement le plugin wordpress de singpay</p>
-                <a href="#" class="ShowDoc">Voir la documentation</a>
+                <h4>Portefeuille</h4>
+                <p class="WordPressExplain">SingPay encapsule les comptes réels des clients dans des Portefeuille.</p>
               </aside>
               
               <aside>
-                <h4>Prestashop</h4>
-                <p class="PrestashopExplain">Vous avez realisé votre site sur prestashop? Intégrez facilement le plugin prestashop de singpay.</p>
-                <a href="#" class="ShowDoc">Voir la documentation</a>
-              </aside>
-              
-              <aside>
-                <h4 class="Externalisation">Externalisation</h4>
-                <p class="ExternalisationExplain">Vous ne voulez pas réaliser de développement en ce qui concerne le paiement, vous pouvez externaliser votre processus de paiement en vous synchronisant avec notre plateforme de paiment en ligne sécurisée sans avoir besoin de coder quoi que ce soit.</p>
-                <a href="#" class="ShowDoc">Voir la documentation</a>
+                <h4>Transaction</h4>
+                <p class="PrestashopExplain">Dans le module core SingPay gère les paiements réels aux partenaires et associe chaque transaction au portefeuille correspondant.</p>
               </aside>
             </div>
-            
           </article>
           
           <article>
-            <h3>Tableau de bord</h3>
+            <h3>API</h3>
             
             <div class="features large" >
               <aside>
-                <h4 class="Wallet">Portefeuille</h4>
-                <p class="WalletExplain">Dès la signature du contrat de paiement en ligne avec une des maisons de téléphonie partenaire de SingPay, utilisez les informations du compte marchand reçu pour créer un nouveau portefeuille sur le tableau de bord de SingPay. Vous pourrez ainsi l’utiliser comme récepteur compte créditeur.</p>
-                <a href="#" class="ShowTuto">Voir le didactitiel</a>
+                <h4 class="Wallet">SingPay Ref</h4>
+                <p class="WalletExplain">SingPay fournis aux developpeurs une API Restfull leur permettant de realiser des interactions sur les Portefeuille, les transactions et les paiement.</p>
+                <a href="https://client.singpay.ga/doc/reference/index.html" class="ShowTuto">Voir la documentation</a>
+              </aside>
+
+            </div>
+          </article>
+          
+          <article>
+            <h3>Services</h3>
+         
+            <div class="features">
+              <aside>
+                <h4 class="Paiement">Workspace</h4>
+                <p class="PaimentExplain">En créant un compte sur la plateforme SingPay client, vous avez automatiquement accès à SingPay Workspace. Cette plateforme vous permet d’accéder à vos identifiants d’API, de gérer vos portefeuilles et vos transactions, d’accéder à l’API et de partager les informations sur un portefeuille à vos partenaires.</p>
               </aside>
               
               <aside>
-                <h4 class="Journal">Journal</h4>
-                <p class="JournalExplain">Consulter l’historique des opérations réalisées sur vos différents portefeuile SingPay: La date, le statut, le montant, ..., de chaque requête effectué sur le portefeuille.</p>
-                <a href="#" class="ShowTuto">Voir le didactitiel</a>
+                <h4>Sandbox</h4>
+                <p class="WordPressExplain">Juste apèrs votre inscription, SingPay vous crée un portefeuille virtuel. Ce qui vous permet d’utiliser l’API comme si vous aviez un portefeuille réel.</p>
+              </aside>
+              
+              <aside>
+                <h4>Externalisation</h4>
+                <p class="PrestashopExplain">Vous ne voulez pas réaliser de développement en ce qui concerne le paiement, vous pouvez externaliser votre processus de paiement en vous synchronisant avec notre plateforme de paiment en ligne sécurisé sans avoir besoin de coder quoi que ce soit.</p>
               </aside>
             </div>
-            
+          </article>
+          
+          <article>
+            <h3>Communauté</h3>
+         
+            <div class="features">
+              <aside>
+                <h4 class="Paiement">Plugin</h4>
+                <p class="PaimentExplain">Les développeurs qui utilisent SingPay au quotidien partagent leur expérience en proposant des outils permettant de faciliter les intégrations dans différentes situations.</p>
+              </aside>
+              
+              <aside>
+                <h4>Integration</h4>
+                <p class="WordPressExplain">Nous mettons systématiquement des ressources à votre disposition pour vous aider à intégrer nos différentes solutions.</p>
+              </aside>
+              
+              <aside>
+                <h4>Support</h4>
+                <p class="PrestashopExplain">Le support SingPay est constitué d'une Documentation de référence, d'un didactitiel vidéo et d'un contact support disponible 24/7 </p>
+              </aside>
+            </div>
           </article>
         </div>
       </section>

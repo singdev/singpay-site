@@ -5,8 +5,8 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
-  height: 70vh;
-  background: url(https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  height: 80vh;
+  background: linear-gradient(#000000bb, #000000bb), url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,16 +27,21 @@
 .home .content .text-head {
   text-transform: uppercase;
   padding-bottom: 1rem;
-  color: #777;
+  color: #fff;
 }
 
 .home .content .text-title {
   padding-bottom: 2rem;
-  font-size: 2.0em;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
 }
 
 .home .content p {
   padding-bottom: 2rem;
+  font-size: 1.0em;
+  color: white;
 }
 
 .home .illustration .singpay .blue {

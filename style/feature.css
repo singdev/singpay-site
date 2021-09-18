@@ -22,6 +22,7 @@
   margin: 1rem;
   width: 400PX;
   max-width: 100%;
+  flex: 1;
 }
 
 .feature .features aside p {
