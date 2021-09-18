@@ -146,3 +146,8 @@ h3 {
   font-size: 24px;
 }
 
+/* Button */
+
+button {
+  border: none;
+}
