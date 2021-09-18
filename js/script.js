@@ -17,7 +17,7 @@ async function sendMessage(){
   const subject = "Nouveau message";
   const labelName = 'SingPay';
   
-  const url = "http://localhost:3000/mail";
+  const url = "https://client.singpay.ga/mail";
   
   const res = await fetch(url, {
     method: "POST",
