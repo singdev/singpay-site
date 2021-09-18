@@ -13,7 +13,7 @@ async function sendMessage(){
   const message = document.getElementById("message").value;
   
   const htmlContent = getMessage(nom, email, telephone, message);
-  const dest = `norpheehounkponou@gmail.com`;
+  const dest = `orphee.nve@sing.ga`;
   const subject = "Nouveau message";
   const labelName = 'SingPay';
   
