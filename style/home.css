@@ -9,6 +9,8 @@
   background: linear-gradient(#000000bb, #000000bb), url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  min-width: 100vw;
 }
 
 .home .illustration .logo {
