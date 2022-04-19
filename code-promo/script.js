@@ -1,4 +1,4 @@
-const url = "http://localhost:1051/v1/code-promo/user";
+const url = "https://gateway.singpay.ga/v1/code-promo/user";
 
 
 async function createCodePromoUser(){

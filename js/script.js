@@ -42,7 +42,6 @@ async function sendMessage(){
       feeadback.style.color = "green";
     } else {
       const message = await res.json();
-      console.log(message);
       alert("Votre message n'a pas été envoyé, veullez recommancer s'il vous plait");
       feeadback.innerHTML = "Votre message n'a pas été envoyé, veullez recommancer s'il vous plait";
       feeadback.style.color = "red";
