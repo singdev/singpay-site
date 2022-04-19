@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingPay - Code promo</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../lib/icomoon/style.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap&family=Asap+Condensed&family=Roboto&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/footer.css">
+
+  </head>
+  <body>
+
+    <header>
+      <aside class="topbar">
+        <a href="mailto:contact@singpay.ga" class="email">contact@singpay.ga</a>
+        <div class="support">
+          <a href="https://client.singpay.ga/register" class="CreateAccount">Creer
+            un compte</a>
+
+          <div class="dropdown">
+            <span class="dropdown-title Support">Support</span>
+            <div class="dropdown-content">
+              <a href="https://client.singpay.ga/doc/reference/index.html"
+                target="blank" class="dropdown-item Documentation">Documentation</a>
+              <a href="#" class="dropdown-item Tuto">Didactitiel</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <span class="dropdown-title" id="langId">Francais</span>
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item French"
+                onclick="translateUI('fr')">Français</a>
+              <a href="#" class="dropdown-item English"
+                onclick="translateUI('en')">English</a>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <aside class="main-header">
+        <nav>
+          <a href="/"><img src="../images/icon.png" alt="Logo" class="logo"></a>
+          <div class="text-p">Code promo</div>
+        </nav>
+        <span class="humberger" onclick="toogleMenu('mainNav')">
+          <i class="fas fa-bars"></i>
+        </span>
+        <nav id="mainNav">
+          <span class="humberger" onclick="toogleMenu('mainNav')">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="/" class="yellow-button Connect"
+            onclick="hideMenu('mainNav')">En savoir plus</a>
+        </nav>
+      </aside>
+    </header>
+
+    <div class="wrapper home-screen show-content">
+
+      <div class="presentation">
+        <h1>
+          Bienvenu sur l'espace promo de SingPay
+        </h1>
+
+        <p>
+          Pour bénéficier d'une réduction lors de votre prochain paiement sur
+          une plateforme utilisant SingPay comme moyen de paiement, veuillez
+          enregistrer le numéro de téléphone avec lequel vous allez effectuer le
+          paiement ainsi que le code promo que vous souhaitez utilisé
+        </p>
+
+        <div class="center">
+          <span class="big-text">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </span>
+          <p>Code promo singpay</p>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <h2>Formulaire d'enregistrement</h2>
+
+        <div class="form-main">
+          <div class="flex-row">
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" id="nom" placeholder="Nom">
+            </div>
+
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" id="prenom" placeholder="Prénom">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Code promo</label>
+            <input type="text" id="code" placeholder="Code promo">
+          </div>
+
+          <div class="form-group">
+            <label>Numéro utilisé pour le paiement </label>
+            <input type="text" id="telephone" placeholder="Ex: 077590000">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Adresse email">
+          </div>
+
+          <button id="button" class="pink-button" onclick="createCodePromoUser()">Enregistrer</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wrapper result-screen">
+
+      <div class="congratulation">
+        <div class="center">
+          <span class="big-text">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </span>
+          <p id="result-code">LBVLOVEUSE</p>
+        </div>
+
+        <div id="result-reduction">-30% de réduction</div>
+        
+        <p>Bravo <span id="result-nom">Orphée NVE</span></p>
+        
+        <p id="result-message">Lors de votre prochaine paiement via SingPay sur l’application Ogasso avec le numéro 077598300, vous bénéficierai de -30 % de réduction </p>
+        
+        <p id="result-detail">Accédez à l'application Ogasso sur Google Play & sur apple store</p>
+
+      </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="../js/script.js"></script>
+
+  </body>
+</html>
