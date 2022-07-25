@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SingPay - Code promo</title>
+    <title class="CodePromo">SingPay - Code promo</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -44,7 +44,7 @@
             <div class="dropdown-content">
               <a href="https://client.singpay.ga/doc/reference/index.html"
                 target="blank" class="dropdown-item Documentation">Documentation</a>
-              <a href="#" class="dropdown-item Tuto">Didactitiel</a>
+              <a href="#" class="dropdown-item Tutorial">Didactitiel</a>
             </div>
           </div>
 
@@ -64,7 +64,7 @@
       <aside class="main-header">
         <nav>
           <a href="/"><img src="../images/icon.png" alt="Logo" class="logo"></a>
-          <div class="text-p">Code promo</div>
+          <div class="text-p CodePromo">Code promo</div>
         </nav>
         <span class="humberger" onclick="toogleMenu('mainNav')">
           <i class="fas fa-bars"></i>
@@ -73,7 +73,7 @@
           <span class="humberger" onclick="toogleMenu('mainNav')">
             <i class="fas fa-times"></i>
           </span>
-          <a href="/" class="yellow-button Connect"
+          <a href="/" class="yellow-button Connect ReadMore"
             onclick="hideMenu('mainNav')">En savoir plus</a>
         </nav>
       </aside>
@@ -82,11 +82,11 @@
     <div class="wrapper home-screen show-content">
 
       <div class="presentation">
-        <h1>
+        <h1 class="welcomePromo">
           Bienvenu sur l'espace promo de SingPay
         </h1>
 
-        <p>
+        <p class="PromoContent">
           Pour bénéficier d'une réduction lors de votre prochain paiement sur
           une plateforme utilisant SingPay comme moyen de paiement, veuillez
           enregistrer le numéro de téléphone avec lequel vous allez effectuer le
@@ -97,33 +97,33 @@
           <span class="big-text">
             <i class="fa-solid fa-clipboard-check"></i>
           </span>
-          <p>Code promo singpay</p>
+          <p class="PromoCodeSingPay">Code promo singpay</p>
         </div>
       </div>
 
       <div class="form-container">
-        <h2>Formulaire d'enregistrement</h2>
+        <h2 class="RegisterForm">Formulaire d'enregistrement</h2>
 
         <div class="form-main">
           <div class="flex-row">
             <div class="form-group">
-              <label>Nom</label>
+              <label class="LastName">Nom</label>
               <input type="text" id="nom" placeholder="Nom">
             </div>
 
             <div class="form-group">
-              <label>Prénom</label>
+              <label class="FirstName">Prénom</label>
               <input type="text" id="prenom" placeholder="Prénom">
             </div>
           </div>
 
           <div class="form-group">
-            <label>Code promo</label>
+            <label class="CodePromo">Code promo</label>
             <input type="text" id="code" placeholder="Code promo">
           </div>
 
           <div class="form-group">
-            <label>Numéro utilisé pour le paiement </label>
+            <label class="phoneForPayment">Numéro utilisé pour le paiement </label>
             <input type="text" id="telephone" placeholder="Ex: 077590000">
           </div>
 
@@ -132,7 +132,7 @@
             <input type="text" id="email" placeholder="Adresse email">
           </div>
 
-          <button id="button" class="pink-button" onclick="createCodePromoUser()">Enregistrer</button>
+          <button id="button" class="pink-button Register" onclick="createCodePromoUser()">Enregistrer</button>
         </div>
       </div>
 
@@ -145,22 +145,24 @@
           <span class="big-text">
             <i class="fa-solid fa-clipboard-check"></i>
           </span>
-          <p id="result-code">LBVLOVEUSE</p>
+          <p id="result-code ResultCode">LBVLOVEUSE</p>
         </div>
 
-        <div id="result-reduction">-30% de réduction</div>
+        <div id="result-reduction" class="PerReduce">-30% de réduction</div>
         
-        <p>Bravo <span id="result-nom">Orphée NVE</span></p>
+        <p class="Congratulations">Bravo <span id="result-nom">Orphée NVE</span></p>
         
-        <p id="result-message">Lors de votre prochaine paiement via SingPay sur l’application Ogasso avec le numéro 077598300, vous bénéficierai de -30 % de réduction </p>
+        <p id="result-message" class="ResultMess">Lors de votre prochaine paiement via SingPay sur l’application Ogasso avec le numéro 077598300, vous bénéficierai de -30 % de réduction </p>
         
-        <p id="result-detail">Accédez à l'application Ogasso sur Google Play & sur apple store</p>
+        <p id="result-detail" class="ResultDetails">Accédez à l'application Ogasso sur Google Play & sur apple store</p>
 
       </div>
 
     </div>
 
     <script src="./script.js"></script>
+    <script src="../lib/i18n.min.js"></script>
+    <script src="../js/i18n.js"></script>
     <script src="../js/script.js"></script>
 
   </body>
