@@ -11,6 +11,7 @@
 
 p {
   line-height: 1.5em;
+  text-align: justify;
 }
 
 .home {
@@ -80,6 +81,45 @@ h3 {
   background-color: #ccc;
 }
 
+.img-container2 {
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+}
+
+.row1 p {
+  font-size: 2.0em;
+  width: 400px;
+  max-width: 100%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.row1 p .created {
+  color: #940051;
+}
+
+.row1 p .extend {
+  color: #CBC600;
+}
+
+.img-container2 img {
+  width: 600px;
+}
 
 /*Button*/
 
