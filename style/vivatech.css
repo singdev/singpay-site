@@ -1,0 +1,21 @@
+#background-video {
+    width: 70vw;
+    height: 100vh;
+    object-fit: contain;
+    position: fixed;
+    left: 15vw;
+    right: 15vw;
+    top: 6vh;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 700px) {
+    #background-video {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

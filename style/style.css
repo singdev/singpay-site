@@ -6,19 +6,6 @@
   scroll-behavior: smooth;
 }
 
-#background-video {
-  width: 70vw;
-  height: 100vh;
-  object-fit: contain;
-  position: fixed;
-  left: 15vw;
-  right: 15vw;
-  top: 6vh;
-  bottom: 0;
-  z-index: -1;
-}
-
-
 /*Main*/
 
 p {
@@ -40,7 +27,7 @@ section {
 
 section .section-wrapper {
   width: 1124px;
-  max-width: 95%;
+  max-width: 100%;
   padding: 1rem;
 }
 
@@ -209,14 +196,4 @@ h3 {
 
 button {
   border: none;
-}
-
-@media (max-width: 700px) {
-  #background-video {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 }

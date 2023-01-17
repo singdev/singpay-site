@@ -2,12 +2,6 @@ AOS.init({
   duration: 1000
 });
 
-window.addEventListener("load", ()=> {
-  setTimeout(() => {
-    window.location.href = "#welcome";
-  }, 8000)
-})
-
 function toogleMenu(navId){
   document.getElementById(navId).classList.toggle("show-nav");
 }
