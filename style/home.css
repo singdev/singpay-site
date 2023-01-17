@@ -1,16 +1,25 @@
 
+body {
+  background-color: black;
+}
+
 .home {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
-  height: 80vh;
-  background: linear-gradient(#000000bb, #000000bb), url(../images/background.jpg);
+  height: 100vh;
+  background: transparent;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   min-width: 100vw;
+  z-index: -10;
+}
+
+.home-data {
+  background: linear-gradient(#000000bb, #000000bb), url(../images/background.jpg);
 }
 
 .home .illustration .logo {
