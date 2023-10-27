@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Asap', sans-serif;
+  font-family: 'Murecho', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -11,6 +11,7 @@
 p {
   line-height: 1.5em;
   text-align: justify;
+  font-size: 1.0em;
 }
 
 .home {
@@ -41,8 +42,11 @@ main .main-wrapper section {
 
 h3 {
   color: #940051;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid #94005157;
+  margin-top: 16rem;
 }
 
 /* dropdown*/
@@ -160,7 +164,7 @@ h3 {
   font-weight: bold;
   margin-top: 6rem;
   margin-bottom: 0.5rem;
-  font-size: 1.3em;
+  font-size: 2.0em;
 }
 
 .section-title .squares {

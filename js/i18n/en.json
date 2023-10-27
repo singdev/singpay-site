@@ -12,9 +12,18 @@
     "Pricing": "Pricing",
     "Contact": "Contact US",
     "Connect": "Login",
-
+    "Raison": "Our goal !",
     "Create": "Created in Gabon",
     "Expand": "We are expanding into other African countries.",
+
+    "TransactionExplain": "All information concerning a customer's payment to a wallet through a specific payment service is encapsulated in a transaction. Transactions are identified by two references. An internal reference and an external reference.",
+    "SandboxExplain": "Just after you sign up, SingPay creates a virtual wallet for you. This allows you to use the API as if you had a real wallet.",
+    "WorkspaceExplain": "By creating an account on the SingPay client platform, you automatically gain access to SingPay Workspace. This platform enables you to access your API credentials, manage your portfolios and transactions, access the API and share portfolio information with your partners.",
+    "DocumentationExplain": "SingPay provides developers with a Restfull API for wallet, transaction and payment interactions.",
+    "ExtExplain": "If you don't want to do any development work on the payment side, you can outsource your payment process by synchronizing with our secure online payment platform without having to code anything.",
+    "PluginExplain": "The developers who use SingPay on a daily basis share their experience by proposing tools to facilitate integration in different situations.",
+    "IntegrationExplain": "We systematically put resources at your disposal to help you integrate our different solutions.",
+    "SupportExplain": "SingPay support includes Reference Documentation, a video tutorial and a 24/7 support contact.",
 
     "Advantage": "SingPay has implemented an inter-operator transaction system that allows merchants to receive money from the internet to the mobile money account of their choice instantly and regardless of the payment method used by the customer to make the payment. Thanks to SingPay, merchants using the aggregator have the possibility to share the revenue from a transaction in different mobile money accounts of their choice.",
     "Advantage2": "SingPay allows merchants to receive payments from anywhere in the world through mobile money and PayPal.",
